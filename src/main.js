@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // Google Maps initialization
+const mapId = 'd2aa162fc56190bcf5343083'
 const huskyLocation = { lat: 34.656926, lng: -106.757983 }
 const huskyPlaceId = null
 
@@ -233,13 +234,14 @@ function getMapStyles() {
 
 async function initMaps() {
   const { Map } = await google.maps.importLibrary('maps')
-  const { Marker } = await google.maps.importLibrary('marker')
+  const { AdvancedMarkerElement } = await google.maps.importLibrary('marker')
   const { PlacesService } = await google.maps.importLibrary('places')
 
   const mapOptions = {
     zoom: 8,
     center: huskyLocation,
-    styles: getMapStyles(),
+    mapId: mapId,
+    // styles: getMapStyles(), CHANGE THE STYLES
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: true
@@ -277,7 +279,7 @@ async function initMaps() {
       zoom: 15
     })
 
-    contactMarker = new Marker({
+    contactMarker = new AdvancedMarkerElement({
       map: contactMap,
       position: huskyLocation,
       title: 'Husky Well & Pump Service'
@@ -308,6 +310,9 @@ async function initMaps() {
     })
   }
 }
+
+/**********************************************************************************************************************/
+
 
 function renderPlaceDetailsLegacy(place) {
   const container = document.getElementById('place-details')
