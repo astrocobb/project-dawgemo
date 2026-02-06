@@ -1,3 +1,3 @@
 # PROJECT DAWGEMO
 
-Website for a smallish business
+Project Dawgemo is a website made for Husky Well & Pump Service, located in Belen, NM, USA. 

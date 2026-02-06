@@ -36,7 +36,7 @@ import emailjs from '@emailjs/browser'
     d[l]
         ? console.warn(p + ' only loads once. Ignoring:', g)
         : (d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)))
-})({ key: import.meta.env.VITE_GOOGLE_MAPS_KEY, v: 'weekly' })
+})({ key: 'AIzaSyC1vNMsoMLtm4Uv7J4PLkOxPQYOkAP9PoQ', v: 'weekly' })
 
 // initialize emailjs
 emailjs.init('2Zxpf0h3F0WtUFVCf')
