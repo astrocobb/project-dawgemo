@@ -218,18 +218,7 @@ const darkMapStyles = [
   { featureType: 'water', elementType: 'labels.text.stroke', stylers: [{ color: '#17263c' }] }
 ]
 
-const lightMapStyles = []
-
 let serviceAreaMap, contactMap, contactMarker, serviceAreaPolygon
-
-function isDarkMode() {
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ||
-    document.documentElement.classList.contains('dark')
-}
-
-function getMapStyles() {
-  return isDarkMode() ? darkMapStyles : lightMapStyles
-}
 
 async function initMaps() {
   const { Map } = await google.maps.importLibrary('maps')
@@ -239,7 +228,7 @@ async function initMaps() {
   const mapOptions = {
     zoom: 8,
     center: huskyLocation,
-    styles: getMapStyles(),
+    styles: darkMapStyles,
     mapTypeControl: false,
     streetViewControl: false,
     fullscreenControl: true
@@ -373,17 +362,6 @@ function renderPlaceDetailsLegacy(place) {
   }
 }
 
-function updateMapStyles() {
-  const styles = getMapStyles()
-  if (serviceAreaMap) {
-    serviceAreaMap.setOptions({ styles })
-  }
-  if (contactMap) {
-    contactMap.setOptions({ styles })
-  }
-}
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateMapStyles)
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initMaps)
 } else {
