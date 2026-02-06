@@ -4,17 +4,19 @@ import IMask from 'imask'
 import emailjs from '@emailjs/browser'
 
 
-
+// initialize emailjs
 emailjs.init('2Zxpf0h3F0WtUFVCf')
+
+// initialize lucide icons
 createIcons({ icons })
 
-// Close mobile menu when navigation link is clicked
+// Close the mobile menu when the navigation link is clicked
 document.addEventListener('DOMContentLoaded', () => {
   const navMenu = document.getElementById('navbar-menu')
   const navLinks = navMenu.querySelectorAll('a')
   const hamburgerButton = document.querySelector('[data-collapse-toggle="navbar-menu"]')
 
-  // Remove focus from hamburger button after click
+  // Remove focus from the hamburger button after click
   if (hamburgerButton) {
     hamburgerButton.addEventListener('click', () => {
       setTimeout(() => {
@@ -36,7 +38,7 @@ const huskyLocation = { lat: 34.656926, lng: -106.757983 }
 const huskyPlaceId = null
 
 const serviceAreaCoords = [
-  { lat: 34.787351, lng: -106.4659051 },
+  { lat: 34.7873510, lng: -106.4659051 },
   { lat: 34.8044779, lng: -106.454148 },
   { lat: 34.8115781, lng: -106.4458863 },
   { lat: 34.8316977, lng: -106.4312297 },
@@ -47,7 +49,7 @@ const serviceAreaCoords = [
   { lat: 34.8616743, lng: -106.418907 },
   { lat: 34.8658976, lng: -106.4253991 },
   { lat: 34.8723742, lng: -106.4291452 },
-  { lat: 34.880111, lng: -106.4403533 },
+  { lat: 34.8801110, lng: -106.4403533 },
   { lat: 34.9085421, lng: -106.4361933 },
   { lat: 34.9185357, lng: -106.4605515 },
   { lat: 34.9387701, lng: -106.4676958 },
@@ -74,8 +76,8 @@ const serviceAreaCoords = [
   { lat: 35.0884872, lng: -106.4749675 },
   { lat: 35.0938151, lng: -106.4729239 },
   { lat: 35.0985813, lng: -106.4724251 },
-  { lat: 35.101774, lng: -106.4804731 },
-  { lat: 35.101404, lng: -106.4844973 },
+  { lat: 35.1017740, lng: -106.4804731 },
+  { lat: 35.1014040, lng: -106.4844973 },
   { lat: 35.1027988, lng: -106.4869814 },
   { lat: 35.1057696, lng: -106.4865927 },
   { lat: 35.1079427, lng: -106.4869139 },
@@ -89,7 +91,7 @@ const serviceAreaCoords = [
   { lat: 35.1368615, lng: -106.4793449 },
   { lat: 35.1418297, lng: -106.4791537 },
   { lat: 35.1478051, lng: -106.4715216 },
-  { lat: 35.146582, lng: -106.4653015 },
+  { lat: 35.1465820, lng: -106.4653015 },
   { lat: 35.1545321, lng: -106.4657961 },
   { lat: 35.1594897, lng: -106.4619234 },
   { lat: 35.1623894, lng: -106.4599869 },
@@ -107,11 +109,11 @@ const serviceAreaCoords = [
   { lat: 35.2233887, lng: -106.5164668 },
   { lat: 35.2506585, lng: -106.5131676 },
   { lat: 35.2779264, lng: -106.4865124 },
-  { lat: 35.293835, lng: -106.4467952 },
+  { lat: 35.2938350, lng: -106.4467952 },
   { lat: 35.2970131, lng: -106.4034246 },
   { lat: 35.3152707, lng: -106.3705719 },
   { lat: 35.3651397, lng: -106.3997807 },
-  { lat: 35.354518, lng: -106.3996393 },
+  { lat: 35.3545180, lng: -106.3996393 },
   { lat: 35.3566251, lng: -106.4455723 },
   { lat: 35.4223313, lng: -106.4481155 },
   { lat: 35.1845703, lng: -106.768782 },
@@ -124,7 +126,7 @@ const serviceAreaCoords = [
   { lat: 34.1855127, lng: -106.7727564 },
   { lat: 34.1869464, lng: -106.7678923 },
   { lat: 34.2038166, lng: -106.7356408 },
-  { lat: 34.212849, lng: -106.7324159 },
+  { lat: 34.2128490, lng: -106.7324159 },
   { lat: 34.2141184, lng: -106.6536932 },
   { lat: 34.2715594, lng: -106.6196302 },
   { lat: 34.2831526, lng: -106.5986046 },
@@ -136,7 +138,7 @@ const serviceAreaCoords = [
   { lat: 34.4075346, lng: -106.5635747 },
   { lat: 34.4318599, lng: -106.5337942 },
   { lat: 34.4581589, lng: -106.5060563 },
-  { lat: 34.463708, lng: -106.5069905 },
+  { lat: 34.4637080, lng: -106.5069905 },
   { lat: 34.4702477, lng: -106.5029462 },
   { lat: 34.4775248, lng: -106.5001778 },
   { lat: 34.4831559, lng: -106.499711 },
@@ -147,7 +149,7 @@ const serviceAreaCoords = [
   { lat: 34.5028443, lng: -106.4994059 },
   { lat: 34.5073116, lng: -106.5017714 },
   { lat: 34.5115782, lng: -106.500666 },
-  { lat: 34.516767, lng: -106.499355 },
+  { lat: 34.5167670, lng: -106.499355 },
   { lat: 34.5204705, lng: -106.4975287 },
   { lat: 34.5216542, lng: -106.4991978 },
   { lat: 34.5252945, lng: -106.4970426 },
