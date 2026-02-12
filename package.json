@@ -1,25 +1,24 @@
 {
-  "name": "my-vue-app",
+  "name": "husky-well-pump",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "watch": "npx tailwindcss -i src/style.css -o ./dist/output.css --watch",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.5.2",
     "vite": "^7.3.1"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/vite": "^4.1.18",
     "flowbite": "^4.0.1",
-    "imask": "^7.6.1",
-    "lucide": "^0.560.0",
-    "ogl": "^1.0.11",
+    "lucide-react": "^0.560.0",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "react-imask": "^7.6.1"
   }
 }
