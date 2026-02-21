@@ -1,6 +1,11 @@
 ### To-do:
+- form rate limiting / spam protection
 - Implement `renderPlaceDetailsError()` function for Google Maps API fallback
-- Consider changing logo color scheme
+- update logo and change color scheme
+- 404 page (only error boundary)
+- loading state for map components
+- analytics
+- fallback if Google Maps API fails
 
 ### Planned Features:
 - Add reCAPTCHA to the contact form
